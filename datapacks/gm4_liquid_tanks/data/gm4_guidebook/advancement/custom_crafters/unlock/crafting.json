@@ -1,0 +1,139 @@
+{
+  "parent": "gm4_guidebook:root",
+  "criteria": {
+    "create_custom_crafter": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "gm4:custom_crafters": true
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": [
+                    "spectator"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_custom_crafters"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "open_custom_crafter": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:dropper"
+                ],
+                "nbt": "{CustomName: {translate: \"gm4.second\", fallback: \"%1$s\", with: [{translate: \"container.gm4.custom_crafter\", fallback: \"Custom Crafter\"}, {text: \" \", extra: [{translate: \"container.gm4.custom_crafter\", fallback: \"Custom Crafter\", font: \"gm4:half_invert\"}, {translate: \"container.gm4.custom_crafter\", fallback: \"Custom Crafter\", font: \"gm4:offscreen\"}, {translate: \"gui.gm4.custom_crafter\", fallback: \"\", font: \"gm4:container_gui\", color: \"white\"}, {text: \" \", font: \"gm4:half_invert\"}, {translate: \"container.gm4.custom_crafter\", fallback: \"Custom Crafter\", font: \"gm4:half_invert\"}, {translate: \"container.gm4.custom_crafter\", fallback: \"Custom Crafter\", font: \"gm4:default\", color: \"#404040\"}], font: \"gm4:half_invert\"}]}}"
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": [
+                    "spectator"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_guidebook"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_custom_crafters"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "open_custom_crafter",
+      "create_custom_crafter"
+    ]
+  ],
+  "rewards": {
+    "function": "gm4_guidebook:custom_crafters/rewards/crafting"
+  }
+}

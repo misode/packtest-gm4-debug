@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "IGI",
+    "ICI",
+    " H "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:glass",
+    "C": "minecraft:comparator",
+    "H": "minecraft:hopper"
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [
+          3420132
+        ]
+      },
+      "minecraft:profile": {
+        "id": [
+          506554253,
+          2099987480,
+          -1876292803,
+          1704690390
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTY0Mjg1NDI1OTYyNSwKICAicHJvZmlsZUlkIiA6ICJiNzVjZDRmMThkZjg0MmNlYjJhY2MxNTU5MTNiMjA0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJLcmlzdGlqb25hczEzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFlOGI5ZjNiODgwNjIzZDNlM2ZmZGZkNmUyZTljYTY0OWQ0ODcyMDY0YzY0NmUyNWNjNDEyZGYzYTZjNmRlMTkiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+          }
+        ]
+      },
+      "minecraft:custom_data": "{gm4_machines:{id:'liquid_tank'}}",
+      "minecraft:custom_name": {
+        "translate": "block.gm4.liquid_tank",
+        "fallback": "Liquid Tank",
+        "color": "white",
+        "italic": false
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "criteria": {
+    "placed_machine_entity": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#gm4_machines:minecarts",
+              "predicates": {
+                "minecraft:custom_data": "{gm4_machines:{}}"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:rails"
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_machines"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_machines_minor"
+              },
+              "score": "load.status"
+            },
+            "range": 4
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gm4_machines-1.4:place_down/place_machine_cart"
+  }
+}

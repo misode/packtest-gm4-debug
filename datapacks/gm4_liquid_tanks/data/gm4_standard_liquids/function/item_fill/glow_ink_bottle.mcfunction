@@ -1,0 +1,4 @@
+scoreboard players set $item_value gm4_lt_value -1
+loot replace entity 00344d47-0004-0004-0004-000f04ce104d weapon.mainhand loot gm4_standard_liquids:glow_ink_bottle
+function gm4_liquid_tanks:smart_item_fill
+tag @s add gm4_lt_fill

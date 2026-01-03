@@ -1,0 +1,1 @@
+execute if score gm4_custom_crafters load.status matches 1.. run summon marker ~ 783.392311518527 ~ {CustomName: "gm4_custom_crafters", Tags: ["gm4_guide", "gm4_guide_custom_crafters"], data: {type: "base", id: "custom_crafters", trigger: 111, module_name: "Custom Crafters", toc_line: "\u25cf Custom Crafters", line_count: 1}}

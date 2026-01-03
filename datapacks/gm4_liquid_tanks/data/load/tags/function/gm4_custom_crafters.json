@@ -1,0 +1,7 @@
+{
+  "values": [
+    "#load:gm4_custom_crafters/dependencies",
+    "#load:gm4_custom_crafters/enumerate",
+    "#load:gm4_custom_crafters/resolve_load"
+  ]
+}

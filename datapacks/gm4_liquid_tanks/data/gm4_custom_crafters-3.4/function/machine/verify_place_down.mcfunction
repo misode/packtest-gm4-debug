@@ -1,0 +1,1 @@
+execute if score $placed_block gm4_machine_data matches 0 if score gm4_custom_crafters load.status matches 3 if score gm4_custom_crafters_minor load.status matches 4 if data storage gm4_machines:temp {id: "custom_crafter"} run function gm4_custom_crafters-3.4:machine/create

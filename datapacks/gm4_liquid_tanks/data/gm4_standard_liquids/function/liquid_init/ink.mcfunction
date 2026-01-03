@@ -1,0 +1,6 @@
+data merge block ~ ~ ~ {CustomName:{translate:"gm4.second",fallback:"%1$s",with:[{translate:"container.gm4.liquid_tank.ink",fallback:"Ink Tank"},[{translate:"gui.gm4.liquid_tank",fallback:"",font:"gm4:container_gui",color:"white"},{translate:"container.gm4.liquid_tank.ink",fallback:"Ink Tank",font:"gm4:default",color:"#404040"}]]}}
+summon item_display ~ ~ ~ {CustomName:"gm4_liquid_tank_liquid_display",Tags:["gm4_liquid_tank_liquid_display","smithed.entity","smithed.strict"],item:{id:"player_head",count:1b,components:{"minecraft:profile":{id:[2112341109,-1138570753,-1614258018,-889714137],properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYyNzQyMDI0MjQ3OCwKICAicHJvZmlsZUlkIiA6ICIyMjg0NDBlODcyYzg0ZGM3ODM0OGIyNzc1ODUwMzRjOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTcGVjaWFsQnVpbGRlcjMyIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q5NjAzYmMyODg0M2RhYjVjOTEzYTkxNmVkMzIxZGZhNTFlMzlkZGVjZDA5YWIyMzNiZjViZDNhMDM1ZjlhNWMiCiAgICB9CiAgfQp9"}]}}},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.2185f,0.0f],scale:[0.83d,0.83d,0.83d]},item_display:"head"}
+data modify entity @s data.gm4_liquid_tanks.liquid_tag set value "gm4_lt_ink"
+scoreboard players set @s gm4_lt_max 300
+tag @s add gm4_lt_ink
+tag @s remove gm4_lt_empty

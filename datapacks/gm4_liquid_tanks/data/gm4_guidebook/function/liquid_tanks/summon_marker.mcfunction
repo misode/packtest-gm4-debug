@@ -1,0 +1,1 @@
+execute if score gm4_liquid_tanks load.status matches 1.. run summon marker ~ 2544.348486877165 ~ {CustomName:"gm4_liquid_tanks",Tags:["gm4_guide","gm4_guide_liquid_tanks"],data:{type:"base",id:"liquid_tanks",trigger:63,module_name:"Liquid Tanks",toc_line:"\u25cf Liquid Tanks",line_count:1}}

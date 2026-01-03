@@ -1,0 +1,1 @@
+execute if score gm4_liquid_tanks load.status matches 1.. run summon marker ~ 4064.873907663935 ~ {CustomName:"gm4_standard_liquids",Tags:["gm4_guide","gm4_guide_standard_liquids"],data:{type:"expansion",base:"liquid_tanks",id:"standard_liquids",trigger:64,module_name:"Standard Liquids",toc_line:"  \u25cf Standard Liquids",line_count:1}}

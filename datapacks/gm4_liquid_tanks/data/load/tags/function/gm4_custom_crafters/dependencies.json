@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#load:gm4_machines",
+      "required": false
+    },
+    {
+      "id": "#load:gm4_forceload",
+      "required": false
+    }
+  ]
+}

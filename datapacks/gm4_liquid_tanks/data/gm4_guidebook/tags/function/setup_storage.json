@@ -1,0 +1,7 @@
+{
+  "values": [
+    "gm4_guidebook:liquid_tanks/setup_storage",
+    "gm4_guidebook:standard_liquids/setup_storage",
+    "gm4_guidebook:custom_crafters/setup_storage"
+  ]
+}

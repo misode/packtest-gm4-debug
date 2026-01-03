@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "experience_bottle",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            3420001
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancement.gm4.standard_liquids.title",
+      "fallback": "Experience Quicksave"
+    },
+    "description": {
+      "translate": "advancement.gm4.standard_liquids.description",
+      "fallback": "Bottle your own experience from a liquid tank",
+      "color": "gray"
+    }
+  },
+  "parent": "gm4:liquid_tanks_create",
+  "criteria": {
+    "bottle_experience": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "gm4_liquid_tanks"
+              },
+              "score": "load.status"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    "gm4_guidebook:liquid_tanks/init_player_db",
+    "gm4_guidebook:standard_liquids/init_player_db",
+    "gm4_guidebook:custom_crafters/init_player_db"
+  ]
+}

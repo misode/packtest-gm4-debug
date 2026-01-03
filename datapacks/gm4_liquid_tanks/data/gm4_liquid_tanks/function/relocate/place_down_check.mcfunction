@@ -1,0 +1,1 @@
+execute if score $placed_block gm4_rl_data matches 0 if score gm4_liquid_tanks load.status matches 2 if data storage gm4_relocators:temp gm4_relocation{custom_block:"gm4_liquid_tank"} run function gm4_liquid_tanks:relocate/summon_block_markers

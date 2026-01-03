@@ -1,0 +1,7 @@
+{
+  "values": [
+    "gm4_guidebook:liquid_tanks/add_toc_line",
+    "gm4_guidebook:standard_liquids/add_toc_line",
+    "gm4_guidebook:custom_crafters/add_toc_line"
+  ]
+}

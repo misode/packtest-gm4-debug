@@ -1,0 +1,6 @@
+data merge block ~ ~ ~ {CustomName:{translate:"gm4.second",fallback:"%1$s",with:[{translate:"container.gm4.liquid_tank.mushroom_stew",fallback:"Mushroom Stew Tank"},[{translate:"gui.gm4.liquid_tank",fallback:"",font:"gm4:container_gui",color:"white"},{translate:"container.gm4.liquid_tank.mushroom_stew",fallback:"Mushroom Stew Tank",font:"gm4:default",color:"#404040"}]]}}
+summon item_display ~ ~ ~ {CustomName:"gm4_liquid_tank_liquid_display",Tags:["gm4_liquid_tank_liquid_display","smithed.entity","smithed.strict"],item:{id:"player_head",count:1b,components:{"minecraft:profile":{id:[-851826350,-819969624,-1341610165,-2102026501],properties:[{name:"textures",value:"eyd0ZXh0dXJlcyc6IHsnU0tJTic6IHsndXJsJzogJ2h0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVlMmMwMjBiYzg2NTBhYWFlN2NkYzhjY2VmYjRhYWI3ZGRkOGNlMjhlYTlmOWJkMDQ0OGIxMWY0Y2M1OGRiZCd9fX0="}]}}},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.2185f,0.0f],scale:[0.83d,0.83d,0.83d]},item_display:"head"}
+data modify entity @s data.gm4_liquid_tanks.liquid_tag set value "gm4_lt_mushroom_stew"
+scoreboard players set @s gm4_lt_max 300
+tag @s add gm4_lt_mushroom_stew
+tag @s remove gm4_lt_empty
