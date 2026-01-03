@@ -1,3 +1,4 @@
+say FORCELOAD load
 scoreboard objectives add gm4_dimension dummy
 gamerule command_block_output false
 

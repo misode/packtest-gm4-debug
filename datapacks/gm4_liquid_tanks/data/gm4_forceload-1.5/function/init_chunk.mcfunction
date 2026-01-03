@@ -1,4 +1,5 @@
 # run from load and mark_dimension
+say FORCELOAD init_chunk
 
 forceload remove 29999999 7134
 forceload add 29999999 7134

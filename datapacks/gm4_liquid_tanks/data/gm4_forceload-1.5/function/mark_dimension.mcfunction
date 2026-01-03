@@ -1,5 +1,6 @@
 # @s = player who entered a new dimension
 # run from advancement dimension_marking and function load
+say FORCELOAD mark_dimension
 
 function gm4_forceload-1.5:init_chunk
 
