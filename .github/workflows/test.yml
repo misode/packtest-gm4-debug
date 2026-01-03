@@ -50,7 +50,7 @@ jobs:
       - name: Copy packs to world
         run: |
           mkdir -p world/datapacks
-          cp datapacks/gm4_* world/datapacks
+          cp -r datapacks/gm4_* world/datapacks
 
       - name: Run test server
         id: run-tests
